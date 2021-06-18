@@ -1,4 +1,5 @@
 import mealsImg from '../../assets/meals.jpg';
+import CartButton from './CartButton';
 import clss from './Header.module.css';
 
 const Header = () => {
@@ -6,9 +7,9 @@ const Header = () => {
     <>
       <header className={clss.header}>
         <h1>Meals</h1>
-        <button>Cart</button>
+        <CartButton />
       </header>
-      <div className={clss['mian-image']}>
+      <div className={clss['main-image']}>
         <img src={mealsImg} alt="A table full of meals" />
       </div>
     </>
