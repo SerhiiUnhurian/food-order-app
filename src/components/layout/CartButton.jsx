@@ -1,9 +1,9 @@
 import CartIcon from '../cart/CartIcon';
 import clss from './CartButton.module.css';
 
-const CartButton = () => {
+const CartButton = ({ onClick }) => {
   return (
-    <button className={clss.button}>
+    <button className={clss.button} onClick={onClick}>
       <span className={clss.icon}>
         <CartIcon />
       </span>
